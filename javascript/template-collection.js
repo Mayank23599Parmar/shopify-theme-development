@@ -1,0 +1,1 @@
+require('../scss/template-collections.scss');
