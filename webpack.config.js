@@ -8,17 +8,15 @@ module.sourceEnable = false;
 const returnAll = watchFile => {
   var allPages = Object.assign({}, config, {
     entry: {
-      'simply-common': ['@babel/polyfill', './javascript/common.js'],
-      'simply-index': './javascript/template-index.js',
-      'simply-collection': './javascript/template-collection.js',
-      'simply-list-collections':'./javascript/template-list-collections.js',
-      'simply-product': './javascript/template-product.js',
-      'simply-cart': './javascript/template-cart.js',
-      'simply-page':'./javascript/template-page.js',
-      'simply-password':'./javascript/template-password.js',
-      'simply-blog-article':'./javascript/template-blog-article.js',
-      'simply-giftcard':'./javascript/template-giftcard.js',
-      'simply-account':'./javascript/template-account.js'
+      'theme-common': ['@babel/polyfill', './javascript/common.js'],
+      'theme-index': './javascript/template-index.js',
+      'theme-collection': './javascript/template-collection.js',
+      'theme-list-collections':'./javascript/template-list-collections.js',
+      'theme-product': './javascript/template-product.js',
+      'theme-cart': './javascript/template-cart.js',
+      'theme-page':'./javascript/template-page.js',
+      'theme-blog-article':'./javascript/template-blog-article.js',
+      'theme-account':'./javascript/template-account.js'
     },
     watch: watchFile,
     output: {
