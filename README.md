@@ -61,7 +61,7 @@ To deploy this project run in root folder
   npm run build 
 ```
 
-To deploy this project run in theme folder
+After this  run in theme folder
 
 ```bash
   shopify theme push
