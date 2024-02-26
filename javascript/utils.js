@@ -119,3 +119,26 @@ export const getLocalData = (dataId) => {
   }
   return localStorage.getItem(dataId);
 };
+export const fetchCartData=async()=>{
+const data = await fetch("/cart.js")
+const result= await data.json()
+if(result){
+
+  return result
+}
+}
+export const addToCart=async(variantId,quantity,callback)=>{
+  const data = await fetch(window.Shopify.routes.root + 'cart/add.js',{
+    method: "POST",
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({id:variantId,quantity:quantity}),
+  })
+  const result= await data.json()
+  if(result){
+    if(callback){
+      callback()
+    }
+  }
+}

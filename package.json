@@ -1,13 +1,13 @@
 {
-  "name": "lucent-innovation",
+  "name": "mayank-parmar",
   "version": "1.0.0",
   "description": "",
   "main": "webpack.config.js",
   "scripts": {
     "dev": "webpack --mode development",
-    "build": "webpack"
+    "build": "webpack --mode production"
   },
-  "author": "",
+  "author": "Mayank Parmar",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.4.3",

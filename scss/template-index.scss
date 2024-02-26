@@ -6,3 +6,27 @@
 
 /* Sections scss 
  *------------------------------------------------*/
+#MainContent{
+    .rich-text__blocks{
+        .rich-text__heading {
+            background: red;
+            color: white;
+            @include flexbox();
+            @include mq("phone"){
+                background-color: yellow;
+                color: black;
+            }
+            @include mq("tablet"){
+                background-color: green;
+                color: #000000
+            }
+            @include mq("lap"){
+                background-color:wheat ;
+    
+            }
+        }
+     }
+}
+.rich-text__blocks{
+    background-color: wheat;
+}
