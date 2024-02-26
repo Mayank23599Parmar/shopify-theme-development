@@ -5,7 +5,7 @@ This repo is use full for make shopify theme. easy to setup and use and make sho
 
 
 ## Installation
-
+0. use node 16 or less than 16 version
 1. create render-js.liquid and render-css.liquid in snipet folder
 2. add render-css.liquid before end of  head section in theme.liquid
 3. add render-js.liquid before end of body section
