@@ -19,6 +19,7 @@ This repo is use full for make shopify theme. easy to setup and use and make sho
 ## Demo
 
 # render-js
+<script src="{{ 'theme-commo.js' | asset_url }}" defer="defer"></script>
 {% if template contains 'collection' %}
   <script src="{{ 'theme-collection.js' | asset_url }}" defer="defer"></script>
 {% elsif template contains 'product' %}
