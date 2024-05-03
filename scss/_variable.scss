@@ -1,0 +1,166 @@
+/* Variable : Color
+ *          : Color code variable 
+ * ------------------------------------------------------------------------- */
+ $color_black: #000000;
+ $color_black_variant: #262220;
+ $color_white: #ffffff;
+ $color_white_smoke: #F3F3F3;
+ $color_grey: #dddddd;
+ $color-dark-grey: #636363;
+ $color_light_gray: #898989;
+ $color_ultra_light_gray: #454545;
+ $color_gainsboro_gray: #e2e2e2;
+ $color_gray61: #9c9c9c;
+ $color_base_gray: #7d7b7a;
+ $color_dove_gray: #6F6F6F;
+ $color_trolley_gray: #828282;
+ $color_bokara_gray: #262220;
+ $color_black_mana: #868686;
+ $color_american_silver: #CFCFCF;
+ $color_gray77: #C4C4C4;
+ $color_red: #FF8484;
+ $color_price: #A49A95;
+ $eerie_black: #1F1F1E;
+ $color_light_black: #262220;
+ $color-base-text: #121212;
+ $header_border_color: rgba($color-base-text, 0.08);
+ $border-color: #D0D0D0;
+ $color-success-background: #d4edda;
+ $color-success-text: #155724;
+ $color-error-background:#f8d7da;
+ $color-error-text: #721c24;
+ $color-quick-view-bg: #ffffffb3;
+ $color-green: #79a70a;
+ $color-border-red: #8f0808;
+ $color-light-red: #f70505;
+ $color-compare-red: #f70505;
+ $color-small-text: #272320;
+ $border-color: #D0D0D0;
+ $color-low-inventory: #ac1f1f;
+ $cart-msg-bg:#2e9e7b;
+ $color-light-pink: #f5f1ec;
+ $price-range-color: #332F2D;
+ $price-range-bg: #E6E6E6;
+ $color-error-message: #FF4949;
+ 
+ /* Section Padding : Sections Padding
+  *                 : Padding varible
+  * ------------------------------------------------------------------------- */
+ $section-padding-top: var(--section-padding-top);
+ $section-padding-bottom: var(--section-padding-bottom);
+ 
+ $section-padding-top-mobile: var(--section-padding-top-mobile);
+ $section-padding-bottom-mobile: var(--section-padding-bottom-mobile);
+ 
+ $section_light_color: var(--section-light-color);
+ $section_dark_color: var(--section-dark-color);
+ 
+ $image_overlay_background: var(--image-overlay-background);
+ $image_overlay_opacity: var(--image-overlay-opacity);
+ 
+ $image_border_radius: var(--image-border-radius);
+ 
+ /* Variable : Gap
+  *          : Gap variable 
+  * ------------------------------------------------------------------------- */
+ $gap: var(--cols-gap); 
+ 
+ 
+ /* Font Family : Font Family
+  *             : Title & body text font family variable
+  * ------------------------------------------------------------------------- */
+ $head_font: var(--main-header-font);
+ $header_font_weight: var(--main-header-font-weight);
+ $base_font: var(--main-body-font);
+ 
+ $button_font: var(--button-font-family);
+ 
+ 
+ /* page layout : Page layout width
+  *             : Page layout container width variable
+  * ------------------------------------------------------------------------- */
+ $page_width_layout: var(--page-width-layout);
+ 
+ 
+ /* Button : Button color 
+  *        : All button color variable
+  * ------------------------------------------------------------------------- */
+ $button_radius: var(--button-radius);
+ 
+ $primary_button_color: var(--primary-button-color);
+ $primary_button_hover_color: var(--primary-button-hover-color);
+ $primary_button_text_color: var(--primary-button-text-color);
+ $primary_button_text_hover_color: var(--primary-button-text-hover-color);
+ $primary_button_outline: var(--primary-button-outline);
+ $primary_button_outline_hover: var(--primary-button-outline_hover);
+ 
+ $secondary_button_color: var(--secondary-button-color);
+ $secondary_button_hover_color: var(--secondary-button-hover-color);
+ $secondary_button_text_color: var(--secondary-button-text-color);
+ $secondary_button_text_hover_color: var(--secondary-button-text-hover-color);
+ $secondary_button_outline: var(--secondary-button-outline);
+ $secondary_button_outline_hover: var(--secondary-button-outline_hover);
+ 
+ $disabled_button_color: var(--disabled-button-color);
+ $disabled_button_text_color: var(--disabled-button-text-color);
+ 
+ $loading_button_border: rgba(18, 18, 18, 0.4);
+ $loading_button_left_border: rgb(18, 18, 18);
+ 
+ /* Input  : Input color 
+  *        : All Input color variable
+  * ------------------------------------------------------------------------- */
+ $primary_input_border: var(--primary-input-border);
+ $primary_input_text: var(--primary-input-text);
+ $secondary_input_border: var(--secondary-input-border);
+ $secondary_input_text: var(--secondary-input-text);
+ 
+ /* Text : Primary & Secondary 
+  *      : All Text color variable
+  * ------------------------------------------------------------------------- */
+  
+ $body_background_color: var(--body-background-color);
+ $primary_heading_color: var(--primary-heading-color);
+ $secondary_heading_color: var(--secondary-heading-color);
+ $primary_text_color: var(--primary-text-color);
+ $secondary_text_color: var(--secondary-text-color);
+ 
+ 
+ /* Header : Header color  
+           : Header background & text color variable
+  * ------------------------------------------------------------------------- */
+ $header_color: var(--header-color);
+ $header_gradient_color: var(--header-gradient-color);
+ $header_text_color: var(--header-text-color);
+ 
+ 
+ /* Announcement : Announcement color  
+                : Announcement background & text color variable
+  * ------------------------------------------------------------------------- */
+ $announcement_color: var(--announcement-color);
+ $announcement_gradient_color: var(--announcement-gradient-color);
+ $announcement_text_color: var(--announcement-text-color);
+ 
+ 
+ /* Text with icon : Text with icon color  
+                   : Text with icon background & text color variable
+  * ------------------------------------------------------------------------- */
+ $text_with_icon_color: var(--text-with-icon-color);
+ $text_with_icon_gradient_color: var(--text-with-icon-gradient-color);
+ $text_with_icon_text_color: var(--text-with-icon-text-color);
+ 
+ /* Footer : Footer color 
+  *        : Footer background & text color variable
+  * ------------------------------------------------------------------------- */
+ $footer_color: var(--footer-color);
+ $footer_gradient_color: var(--footer-gradient-color);
+ $footer-text-color: var(--footer-text-color);
+ $footer-logo-width: var(--footer-logo-width);
+ 
+ $copyright_color: var(--copyright-color);
+ $copyright_gradient_color: var(--copyright-gradient-color);
+ $copyright_text_color: var(--copyright-text-color);
+ 
+
+  $font-scale: var(--font-body-scale);
+ 

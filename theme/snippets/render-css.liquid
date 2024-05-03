@@ -1,0 +1,15 @@
+{% if template contains 'collection' %}
+  {{ 'theme-collection.css' | asset_url | stylesheet_tag }}
+{% elsif template contains 'product' %}
+  {{ 'theme-product.css' | asset_url | stylesheet_tag }}
+{% elsif template contains 'index' %}
+  {{ 'theme-index.css' | asset_url | stylesheet_tag }}
+{% elsif template contains 'cart' %}
+  {{ 'theme-cart.css' | asset_url | stylesheet_tag }}
+{% elsif template contains 'page' %}
+  {{ 'theme-page.css' | asset_url | stylesheet_tag }}
+{% elsif template contains 'article' %}
+  {{ 'theme-blog-article.css' | asset_url | stylesheet_tag }}
+{% elsif template contains 'customers/account' %}
+  {{ 'theme-account.css' | asset_url | stylesheet_tag }}
+{% endif %}

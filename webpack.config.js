@@ -8,15 +8,15 @@ module.sourceEnable = false;
 const returnAll = watchFile => {
   var allPages = Object.assign({}, config, {
     entry: {
-      'theme-common': ['@babel/polyfill', './javascript/common.js'],
+    
       'theme-index': './javascript/template-index.js',
       'theme-collection': './javascript/template-collection.js',
-      'theme-list-collections':'./javascript/template-list-collections.js',
+      'theme-list-collections': './javascript/template-list-collections.js',
       'theme-product': './javascript/template-product.js',
       'theme-cart': './javascript/template-cart.js',
-      'theme-page':'./javascript/template-page.js',
-      'theme-blog-article':'./javascript/template-blog-article.js',
-      'theme-account':'./javascript/template-account.js'
+      'theme-page': './javascript/template-page.js',
+      'theme-blog-article': './javascript/template-blog-article.js',
+      'theme-account': './javascript/template-account.js'
     },
     watch: watchFile,
     output: {

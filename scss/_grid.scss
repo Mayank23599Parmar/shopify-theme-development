@@ -1,38 +1,26 @@
-.container {
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    @include mq("phone") {
-      width: 100%;
-      max-width: ($site_width_xs - 30) + px;
-    }
-    @include mq("tablet") {
-      width: 100%;
-      max-width: ($site_width_sm - 30) + px;
-    }
-    @include mq("lap") {
-      width: 100%;
-      max-width: ($site_width_md - 30) + px;
-    }
-    @include mq("desk-and-up") {
-      width: ($site_width_md - 30) + px;
-    }
-    @include mq("large-desk-and-up") {
-      width: ($site_width_lg - 30) + px;
-    }
-  }
-  
-  .container-fluid {
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  .row {
-    margin-left: -15px;
-    margin-right: -15px;
-  }
+/* Grid scss 
+ *------------------------------------------------*/
+
+ .container,
+ .container-fluid {
+   margin-left: auto;
+   margin-right: auto;
+   padding-left: 1rem;
+   padding-right: 1rem;
+   @include mq("phone-and-tablet") {
+     padding-left: 2rem;
+     padding-right: 2rem;
+   }
+ }
+ .container {
+   max-width: $page_width_layout;
+   @include mq("lap-and-desk") {
+     max-width: 134rem;
+   }
+ }
+ .container-fluid {
+   max-width: 100%;
+ }
   .col-xs-1,
   .col-sm-1,
   .col-md-1,
