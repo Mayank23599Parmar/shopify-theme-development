@@ -1,9 +1,10 @@
 require('../scss/template-index.scss');
 import {fetchCartData,addToCart} from './utils'
 class HomePage {
-    constructor() {
+   constructor() {
         this.title = "shopify theme dev"
         this.init()
+     
     }
     homeaddTocart() {
         const cards = document.querySelectorAll(".card__inner")
@@ -31,6 +32,7 @@ class HomePage {
      // const carted= await addToCart()
     }
     init() {
+        // alert("wfwffw")
         this.homeaddTocart();
       //  this.getcartData()
     }

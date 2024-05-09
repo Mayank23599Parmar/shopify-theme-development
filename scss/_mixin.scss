@@ -276,14 +276,6 @@
    object-position: $content;
  }
  
- /* MIXIN : WIDTH/HEIGHT
-  *    EX : @include square(100px, 100px);
-            You can pass width && height or just pass width and the height will default to the width value 
-  * ---------------------------------------------------------------------------------------------------------*/
- @mixin square($width, $height: $width) {
-   width: $width;
-   height: $height;
- }
  
  /* MIXIN : LINEAR GRADIENT
   *    EX : @include linear-gradient((90deg, #000 0%, rgba(0,0,0,0) 100%));

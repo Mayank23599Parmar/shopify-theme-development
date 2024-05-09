@@ -3,10 +3,26 @@
   "version": "1.0.0",
   "description": "",
   "main": "webpack.config.js",
+  "config": {
+    "store": "customer-accounts-extension",
+    "dev_theme": "136119713950",
+    "prod_theme": "136119681182"
+  },
   "scripts": {
-    "dev": "webpack --mode development",
-    "build": "webpack --mode production",
-    "info": "cd theme && ls"
+    "dev": "concurrently -n webpack,shopify  -c \"bgBlue.bold,bgGreen.bold\"  \"npm run webpeck-dev\" \"npm run shopify-open\"",
+    "webpeck-dev": "webpack --mode development",
+    "webpeck-prod": "webpack --mode production",
+    "shopify-push-json": "shopify theme push -t %npm_package_config_dev_theme% --only templates/*.json  --only config/*.json --only sections/*.json --path ./theme",
+    "shopify-push": "shopify theme push -t %npm_package_config_dev_theme% --ignore \"config/*.json\" --ignore \"templates/*.json\" --ignore \"sections/*.json \" --path ./theme",
+    "shopify-push-live": "shopify theme push -t %npm_package_config_prod_theme%  --allow-live --ignore \"config/*.json\" --ignore \"templates/*.json\" --ignore \"sections/*.json \" --path ./theme",
+    "shopify-open": "shopify theme dev -s %npm_package_config_store%  -t %npm_package_config_dev_theme% --ignore \"config/*.json\" --ignore \"templates/*.json\" --ignore \"sections/*.json \" --path ./theme",
+    "shopify-pull": "shopify theme pull -t %npm_package_config_dev_theme% --path ./theme",
+    "shopify-pull-json": "shopify theme pull -t %npm_package_config_dev_theme% --only templates/*.json  --only config/*.json --only sections/*.json --path ./theme",
+    "build": "concurrently -n webpack,shopify -c \"bgBlue.bold,bgGreen.bold\"  \"npm run webpeck-prod\" \"npm run shopify-push\"",
+    "deploy": "concurrently -n webpack,shopify -c \"bgBlue.bold,bgGreen.bold\"  \"npm run webpeck-prod\" \"npm run shopify-push-live\"",
+    "info": "shopify theme info",
+    "logout": "shopify auth logout",
+    "login": "shopify theme dev -s %npm_package_config_store%"
   },
   "author": "Mayank Parmar",
   "license": "ISC",
@@ -17,6 +33,7 @@
     "@babel/preset-env": "^7.4.3",
     "@babel/preset-stage-0": "^7.0.0",
     "babel-loader": "^8.0.5",
+    "concurrently": "^8.2.2",
     "css-loader": "^1.0.1",
     "mini-css-extract-plugin": "^0.4.5",
     "sass": "^1.49.9",
