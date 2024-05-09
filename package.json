@@ -4,9 +4,9 @@
   "description": "",
   "main": "webpack.config.js",
   "config": {
-    "store": "customer-accounts-extension",
-    "dev_theme": "136119713950",
-    "prod_theme": "136119681182"
+    "store": "Shopify_Store_Name",  
+    "dev_theme": "Development_Theme_ID",
+    "prod_theme": "Production_Theme_ID (Live / Published)"
   },
   "scripts": {
     "dev": "concurrently -n webpack,shopify  -c \"bgBlue.bold,bgGreen.bold\"  \"npm run webpeck-dev\" \"npm run shopify-open\"",
